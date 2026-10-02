@@ -1,0 +1,90 @@
+[
+  {
+    "id": "kb001",
+    "topic": "Status",
+    "text": "The Status column records whether the patient was Alive or Dead at the end of the follow-up period. It is the primary prediction target in survival analysis models trained on this SEER dataset. Alive indicates the patient survived through the observation window; Dead indicates the patient did not survive."
+  },
+  {
+    "id": "kb002",
+    "topic": "Survival Months",
+    "text": "Survival Months captures the number of months between the patient's initial diagnosis and either death or the end of the study follow-up. It is used in time-to-event analyses and as a secondary regression target. Longer survival months generally correlate with earlier-stage diagnosis and hormone-receptor-positive tumors."
+  },
+  {
+    "id": "kb003",
+    "topic": "6th Stage",
+    "text": "The 6th Stage column encodes the overall AJCC (American Joint Committee on Cancer) stage combining T, N, and M classifications. Stages range from I (localized, early) through IV (distant metastasis). Higher AJCC stage is one of the strongest predictors of reduced survival and guides treatment intensity decisions."
+  },
+  {
+    "id": "kb004",
+    "topic": "T Stage",
+    "text": "T Stage describes the primary tumor size and local extent, ranging from T1 (small, ≤2 cm) to T4 (tumor invading chest wall or skin). It is a core TNM staging component. Larger T stage is associated with greater local burden and a higher likelihood of lymph node involvement."
+  },
+  {
+    "id": "kb005",
+    "topic": "N Stage",
+    "text": "N Stage indicates the extent of regional lymph node involvement, from N1 (minimal nodal spread) to N3 (extensive nodal spread). Lymph node status is one of the most significant prognostic factors in breast cancer; N3 disease typically requires aggressive systemic therapy and carries a poorer prognosis."
+  },
+  {
+    "id": "kb006",
+    "topic": "Tumor Size",
+    "text": "Tumor Size is recorded in millimeters and represents the largest diameter of the primary breast tumor at diagnosis. Smaller tumors (under 20 mm) are generally associated with better outcomes and often qualify for breast-conserving surgery. Tumor size feeds directly into T Stage classification."
+  },
+  {
+    "id": "kb007",
+    "topic": "Grade",
+    "text": "Grade reflects how abnormal the cancer cells appear under a microscope, scored 1 (well differentiated, slow-growing) to 3 (poorly differentiated, aggressive). The differentiate column captures the same information in text form. Grade 3 tumors have higher mitotic rates and are linked to worse prognosis and greater chemotherapy benefit."
+  },
+  {
+    "id": "kb008",
+    "topic": "differentiate",
+    "text": "The differentiate column describes the histological differentiation of the tumor in text form: Well differentiated, Moderately differentiated, Poorly differentiated, or Undifferentiated. It corresponds directly to Grade and reflects how closely tumor cells resemble normal breast tissue. Poorly differentiated and undifferentiated tumors carry the worst prognosis."
+  },
+  {
+    "id": "kb009",
+    "topic": "Estrogen Status",
+    "text": "Estrogen Status (ER Status) indicates whether tumor cells express estrogen receptors. ER-positive tumors respond to hormone-blocking therapies such as tamoxifen or aromatase inhibitors, making ER positivity a favorable prognostic and predictive marker. Approximately 70–80% of breast cancers are ER-positive."
+  },
+  {
+    "id": "kb010",
+    "topic": "Progesterone Status",
+    "text": "Progesterone Status (PR Status) indicates whether tumor cells express progesterone receptors. PR positivity often accompanies ER positivity and further confirms hormone sensitivity. Tumors that are both ER and PR positive tend to have the best response to endocrine therapy and generally favorable long-term outcomes."
+  },
+  {
+    "id": "kb011",
+    "topic": "Reginol Node Positive",
+    "text": "Reginol Node Positive records the number of lymph nodes that tested positive for cancer. Together with Regional Node Examined, it determines the node ratio — a continuous prognostic variable. A higher number of positive nodes independently predicts worse survival even within the same N Stage category."
+  },
+  {
+    "id": "kb012",
+    "topic": "Regional Node Examined",
+    "text": "Regional Node Examined records how many lymph nodes were surgically removed and pathologically tested. A higher examined node count improves staging accuracy. The ratio of positive to examined nodes is clinically significant; inadequate sampling can lead to understaging and suboptimal treatment planning."
+  },
+  {
+    "id": "kb013",
+    "topic": "A Stage",
+    "text": "A Stage classifies disease as Regional (cancer spread to nearby lymph nodes or tissue) or Distant (metastasis to remote organs). Distant-stage disease corresponds to Stage IV and is associated with substantially lower survival rates. Most patients in this dataset present with Regional disease."
+  },
+  {
+    "id": "kb014",
+    "topic": "Age",
+    "text": "Age captures the patient's age in years at breast cancer diagnosis. Younger patients (under 40) often present with more aggressive tumor biology, while older patients may have competing comorbidities affecting survival. Age interacts with tumor subtype and treatment tolerability in survival prediction models."
+  },
+  {
+    "id": "kb015",
+    "topic": "Race",
+    "text": "The Race column records the patient's self-reported racial or ethnic group. In SEER data, race is associated with differences in stage at diagnosis, tumor subtype distribution, access to care, and survival outcomes. These disparities reflect structural and social determinants of health rather than biological differences."
+  },
+  {
+    "id": "kb016",
+    "topic": "Marital Status",
+    "text": "Marital Status records whether the patient was married, single, divorced, widowed, or separated at diagnosis. SEER studies consistently show married patients have better survival outcomes, attributed to greater social support, earlier care-seeking behavior, and better treatment adherence."
+  },
+  {
+    "id": "kb017",
+    "topic": "model_limitations",
+    "text": "This model is a research tool trained on historical SEER population data and is not intended for clinical decision-making. Predictions reflect statistical patterns in the training cohort and cannot account for individual treatment plans, comorbidities, or recent advances in therapy. All outputs must be reviewed by a qualified oncologist."
+  }
+]
+
+
+
